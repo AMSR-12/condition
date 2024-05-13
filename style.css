@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgb(242, 158, 89);  
+    display: flex;
+    width: 100%; 
+    align-items: center;
+
+    justify-content:end;
+}
+nav li{
+    display: inline-block;
+    margin-left: 100px;
+    cursor: pointer;
+    padding: 0px 20px;
+    
+}
+nav a{
+    text-decoration: none;
+}
+.logo
+{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 600px;
+}
+nav a:hover{
+    color: wheat;
+}
+img{
+    background-size: cover;
+    background-position: center;
+    
+    
+
+}

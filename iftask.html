@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Conditions</h2>
+        <div class="row">
+            <div class="col">
+                <label>Age</label>
+            </div>
+            <div class="col">
+                <input type="number" id="ageCal" name="ageCal" onkeyup="ageCal()" class="form-control"/>
+            </div>
+            <div class="col">
+                <span id="ageCalMsg"></span>
+            </div>
+        </div>
+        
+
+
+    </div>
+    <script>
+        function ageCal()
+        {
+            let age=Number(document.getElementById('ageCal').value);
+            let msg=''
+            if(age>18)
+            {
+                msg='major'
+                if(age>60)
+                {
+                    msg='senior citizen'
+                }
+            }
+            else if(age>10)
+            {
+            msg='minor';
+            }
+            else if(age>5)
+            {
+            msg='baby';
+            }
+            document.getElementById('ageCalMsg').innerHTML=msg;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Guess the number</h1>
+    <input id="guessnumber">
+    <button onclick="check()">Check</button>
+    <p id ='result'>You are Wrong/Right</p>
+    
+    <script>
+
+var guessnumber=document.getElementById('guessnumber');
+var result=documement.getElementById('result');
+var randomNumber=Math.floor(Math.random()*10)+1;
+
+function check()
+{
+var enternumber = guessnumber.value;
+if(randomNumber == enternumber)
+{
+    console.log('right');
+    result.textContent="RIGHT";
+    alert('you won..')
+    
+}
+else{
+    result.textContent='wrong';
+}
+}
+
+    </script>  -->
+<h1 id="result">Welcome</h1>
+<button onclick="update(event)">Selvi</button>
+<button onclick="update(event)">Arul</button>
+<button onclick="update(event)">Rasu</button>
+<script>
+    var h1=document.getElementById('result')
+    function update(event)
+    {
+        h1.textContent=event.target.textContent;
+    }
+</script>
+</body>
+</html>

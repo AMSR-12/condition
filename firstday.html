@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2>variable</h2>
+            <script>
+                let fName='Sam';
+                var age=21;
+                let isMajor=true;
+                const BORNCOUNTRY="INDIA";
+                // console.log(fName);
+                // console.log(age);
+                // console.log(isMajor);
+                // console.log(BORNCOUNTRY);         
+                function printValues()
+                {
+                    console.log(fName);
+                console.log(age);
+                console.log(isMajor);
+                console.log(BORNCOUNTRY);  
+
+                }  
+                printValues();  
+                var mark1=20;
+                let mark2=30;
+                console.log(mark1);
+                console.log(mark2);
+                 //global scope var keyword declartion part only going print part
+                // initlization part not going print part that is called hoisting
+                //not allowed declartion part and initzation part
+
+                function getHelloMsg()
+                {
+                    return "hello";
+                }
+                function  getAdd(val1,val2)
+                {
+                    return val1+val2;
+                }
+                function displayAdd(val1,val2){
+                    console.log(val1+val2+"Is the result");
+                }           
+                function sayHello()
+                {
+                    console.log("vanakam da mapla");
+
+                }
+                let sumVal=getAdd(50,100);
+                console.log(sumVal);
+                console.log(getHelloMsg());
+                displayAdd(50,100)
+                sayHello();
+                </script>
+        </div>
+        </div>
+       
+       
+</body>
+</html>
